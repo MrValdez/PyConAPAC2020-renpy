@@ -1,0 +1,32 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 8, in script
+    python:
+  File "game/script.rpy", line 14, in <module>
+    r = requests.get(url)
+IOError: Could not find a suitable TLS CA certificate bundle, invalid path: python-packages/certifi\cacert.pem
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 8, in script
+    python:
+  File "D:\renpy-7.3.5-sdk\renpy\ast.py", line 914, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\renpy-7.3.5-sdk\renpy\python.py", line 2028, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/script.rpy", line 14, in <module>
+    r = requests.get(url)
+  File "python-packages/requests/api.py", line 76, in get
+  File "python-packages/requests/api.py", line 61, in request
+  File "python-packages/requests/sessions.py", line 530, in request
+  File "python-packages/requests/sessions.py", line 643, in send
+  File "python-packages/requests/adapters.py", line 416, in send
+  File "python-packages/requests/adapters.py", line 228, in cert_verify
+IOError: Could not find a suitable TLS CA certificate bundle, invalid path: python-packages/certifi\cacert.pem
+
+Windows-8-6.2.9200
+Ren'Py 7.3.5.606
+PyCon APAC 2020 live 1.0
+Sat Sep 19 13:59:44 2020
